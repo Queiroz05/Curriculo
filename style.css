@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{  
+    background-image: -webkit-linear-gradient(45deg,#fefae0,#ccd5ae); 
+   /* background-color:#fefae0; */
+    display: flex;
+
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+aside > div h1{
+    font-size:26px ;
+    font-family: 'Trebuchet MS';
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+aside > div p{
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+    font-weight: 500;
+}
+#selfie{
+    margin-top: 50px;
+    padding: 2px;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.264);
+    
+}
+.info{
+    padding: 10px;
+    text-align: center;
+}
+.redes{
+    padding: 10px;
+    text-align: center;  
+}
+.social{
+    width: 30px;
+    border-radius: 10%;
+    margin: 30px 20px ; 
+}
+section{
+    display: flex;
+   align-self: center;
+}
+.principal{
+    padding: 40px;
+    width: 60%;
+    border-left:0.5px solid black ;
+}
+h2{
+    font: size 24px;
+    font-family: 'Trebuchet MS';
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+    border-top:0.5px solid black ;
+}
+.principal > p{
+    line-height:30px;
+}
+p{
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+    font-weight: 300;
+}
+li{
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+    font-weight: 500;  
+    line-height: 30px;
+}
+.secundaria{
+    border-left:0.5px solid black ; 
+    width: 40%;
+    padding: 40px;
+}
+.projetos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        display: inline-block;
+    }
+    .info{
+        margin-top:-50px;
+    }
+    .social{
+        display: inline-block;
+        margin-bottom: -20px;
+    }
+    section{
+        display: inline-block;
+    }
+    .principal{
+        width: 100%;  
+    }
+    .principal > ul{
+        border-top: 0.2px solid black;
+    }
+    .secundaria{
+        width: 100%;
+    }
+}
